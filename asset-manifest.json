@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ngo-Website/static/css/main.e3dc170b.css",
+    "main.js": "/Ngo-Website/static/js/main.eb5ae2a1.js",
+    "index.html": "/Ngo-Website/index.html",
+    "main.e3dc170b.css.map": "/Ngo-Website/static/css/main.e3dc170b.css.map",
+    "main.eb5ae2a1.js.map": "/Ngo-Website/static/js/main.eb5ae2a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3dc170b.css",
+    "static/js/main.eb5ae2a1.js"
+  ]
+}
