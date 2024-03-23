@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Ngo-Website/static/css/main.5d4aad24.css",
-    "main.js": "/Ngo-Website/static/js/main.24d9ea96.js",
+    "main.js": "/Ngo-Website/static/js/main.b73b81d4.js",
     "static/media/test.jpeg": "/Ngo-Website/static/media/test.9fba631a4950b32433fd.jpeg",
     "index.html": "/Ngo-Website/index.html",
     "main.5d4aad24.css.map": "/Ngo-Website/static/css/main.5d4aad24.css.map",
-    "main.24d9ea96.js.map": "/Ngo-Website/static/js/main.24d9ea96.js.map"
+    "main.b73b81d4.js.map": "/Ngo-Website/static/js/main.b73b81d4.js.map"
   },
   "entrypoints": [
     "static/css/main.5d4aad24.css",
-    "static/js/main.24d9ea96.js"
+    "static/js/main.b73b81d4.js"
   ]
 }
