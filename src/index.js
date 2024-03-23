@@ -22,7 +22,7 @@ const App = () => {
     <Router>
     <Header/>
       <Switch>
-        <Route component={Home} exact path="/Ngo-Website" />
+        <Route component={Home} exact path="/" />
         <Route component={Contact} exact path="/contact" />
         <Route component={About} exact path="/about" />
         <Route component={Donation} exact path="/donation" />

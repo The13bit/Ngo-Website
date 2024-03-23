@@ -4,6 +4,7 @@ import { Player } from '@lottiefiles/react-lottie-player'
 import { Helmet } from 'react-helmet'
 
 import './Styles/home.css'
+import bkimg from './Images/test.jpeg'
 
 const Home = (props) => {
   return (
@@ -23,6 +24,8 @@ const Home = (props) => {
             <div
               data-thq="slider-slide"
               className="home-slider-slide swiper-slide"
+              style={{backgroundImage:`url(${bkimg})`}}
+              
             >
               <span>Text</span>
             </div>
