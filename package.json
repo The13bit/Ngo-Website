@@ -27,7 +27,7 @@
     "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test --env=jsdom",
+    "test": "craco test --env=jsdom --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "craco eject"
   },
   "engines": {

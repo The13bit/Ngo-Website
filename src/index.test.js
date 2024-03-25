@@ -16,6 +16,7 @@ import TeamBanner from "./components/team-banner";
 import NotFound from "./views/not-found";
 import Contacttemp from "./components/contacttemp.js";
 import DonateSLD from "./components/donate-sld.js";
+import axios from "./Axios/axios.js";
 jest.mock("@lottiefiles/react-lottie-player", () => {
   return {
     Player: () => <div>Mock Player</div>,
