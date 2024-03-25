@@ -38,9 +38,9 @@ const App = () => {
         <Header />
         <Switch>
           <Route component={Home} exact path="/Ngo-Website" />
-          <Route component={Contact} exact path="/contact" />
-          <Route component={About} exact path="/about" />
-          <Route component={Donation} exact path="/donation" />
+          <Route component={Contact} exact path="/Ngo-Website/contact" />
+          <Route component={About} exact path="/Ngo-Website/about" />
+          <Route component={Donation} exact path="/Ngo-Website/donation" />
 
           <Route component={NotFound} path="**" />
 
