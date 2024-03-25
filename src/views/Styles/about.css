@@ -1,7 +1,7 @@
 .about-container {
   width: 100%;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   min-height: 100vh;
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
@@ -11,8 +11,8 @@
 }
 .about-container01 {
   gap: var(--dl-space-space-unit);
-  width: 1105px;
-  height: 418px;
+  width: 100%;
+  height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -20,6 +20,11 @@
   justify-content: center;
   background-image: url('https://play.teleporthq.io/static/svg/default-img.svg');
   background-position: center;
+}
+@media(max-width:800px){
+  .about-container01{
+    height: 50%;
+  }
 }
 .about-text {
   font-size: 40px;
@@ -36,11 +41,11 @@
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
-  height: 100px;
+  height: 50%;
   display: flex;
-  margin-top: var(--dl-space-space-unit);
+  /* margin-top: var(--dl-space-space-unit); */
   align-items: center;
-  margin-bottom: var(--dl-space-space-unit);
+  /* margin-bottom: var(--dl-space-space-unit); */
   flex-direction: column;
   justify-content: center;
 }
@@ -60,7 +65,7 @@
   gap: var(--dl-space-space-halfunit);
   flex: 0 0 auto;
   width: 100%;
-  height: 100px;
+  height: 30%;
   display: flex;
   margin-top: var(--dl-space-space-unit);
   align-items: center;
@@ -150,8 +155,12 @@
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: auto;
-  height: 377px;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
+@media(max-width:767px){
+  .about-container11{
+  flex-direction: column;
+}}

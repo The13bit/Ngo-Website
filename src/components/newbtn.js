@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import './Styles/newbtn.css'
 
 const Newbtn = (props) => {
-  console.log(props)
+  
   const history = useHistory();
 
   const handleRedirect = (path) => {

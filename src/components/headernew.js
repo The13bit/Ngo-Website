@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Player } from "@lottiefiles/react-lottie-player";
 import PropTypes from "prop-types";
@@ -6,30 +6,45 @@ import PropTypes from "prop-types";
 import Newbtn from "./newbtn";
 import "./Styles/headernew.css";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-
+import NGOICON from "./Images/GCAHF.png";
 const Headernew = (props) => {
-  const history=useHistory()
+  const history = useHistory();
+  const [Mobile,setMobile]=useState(false)
+  const toggleMobileMenu = () => {
+    setMobile(!Mobile);
+  };
+  
 
   return (
     <div className="headernew-container">
-      <header  data-thq="thq-navbar" className="headernew-navbar-interactive">
-      <div onClick={()=>history.push("/Ngo-Website")}>
-        <Player
+      <header data-thq="thq-navbar" className="headernew-navbar-interactive">
+        <div onClick={() => history.push("/Ngo-Website")}>
+          <img
+            src={NGOICON}
+            alt="NGO Icon"
+            className=" tw-object-cover tw-h-12 tw-w-12 tw-mx-4"
+          />
+          {/* <Player
           
-          src="https://presentation-website-assets.teleporthq.io/features/lottie.json"
+          src="https://app.lottiefiles.com/animation/86c83bb1-14d4-4fc7-8135-0742880b010d"
           speed="1"
           autoplay="true"
           background="transparent"
           className="headernew-lottie-node"
-        ></Player>
+        ></Player> */}
         </div>
-        <span className="headernew-text">{props.ngo}</span>
-        
+        <span className="headernew-text tw-text-center tw-max-w-48">
+          Geriatric Care and Health Foundation
+        </span>
+
         <div data-thq="thq-navbar-nav" className="headernew-desktop-menu">
           <nav className="headernew-links">
-            <Newbtn onClick='/about' rootClassName="newbtn-root-class-name"></Newbtn>
             <Newbtn
-              onClick='/contact'
+              onClick="/about"
+              rootClassName="newbtn-root-class-name"
+            ></Newbtn>
+            <Newbtn
+              onClick="/contact"
               button1="Contact"
               rootClassName="newbtn-root-class-name2"
             ></Newbtn>
@@ -38,41 +53,40 @@ const Headernew = (props) => {
               rootClassName="newbtn-root-class-name1"
             ></Newbtn>
           </nav>
-          <div className="headernew-buttons">
-            <button onClick={()=>history.push('/donation')} className="headernew-register button">Donate</button>
-          </div>
         </div>
-        <div data-thq="thq-burger-menu" className="headernew-burger-menu">
+        <div className="headernew-buttons ">
+          <button
+            onClick={() => history.push("/donation")}
+            className="headernew-register button tw-ml-3"
+          >
+            Donate
+          </button>
+        </div>
+        <div   className="headernew-burger-menu  " onClick={toggleMobileMenu}>
           <svg viewBox="0 0 1024 1024" className="headernew-icon">
             <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
           </svg>
         </div>
-        <div data-thq="thq-mobile-menu" className="headernew-mobile-menu">
+        {Mobile&&(<div    className="headernew-mobile-menu ">
           <div className="headernew-nav">
             <div className="headernew-top">
-              <span>{props.text}</span>
-              <div data-thq="thq-close-menu" className="headernew-close-menu">
-                <svg viewBox="0 0 1024 1024" className="headernew-icon02">
+              <span className=" tw-text-center tw-max-w-32">Geriatric Care and Health Foundation</span>
+              <div data-thq="thq-close-menu" className="headernew-close-menu tw-h-8 tw-w-8" onClick={toggleMobileMenu}>
+                <svg viewBox="0 0 1024 1024" className="tw-h-8 tw-w-8">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                 </svg>
               </div>
             </div>
             <nav className="headernew-links1">
-              <span className="headernew-text2">Home</span>
-              <span className="headernew-text3">About</span>
-              <span className="headernew-text4">Contact</span>
-              <span className="headernew-text5">Info</span>
+              <span onClick={() =>{ history.push("/Ngo-Website"); toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Home</span>
+              <span onClick={() => {history.push("/Contact");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Contact</span>
+              <span onClick={() => {history.push("/Info");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Info</span>
+              <span onClick={() => {history.push("/Donation");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Donation</span>
+              
             </nav>
-            <div className="headernew-buttons1">
-              <button className="headernew-register1 button">
-                <span>
-                  <span>Donate</span>
-                  <br></br>
-                </span>
-              </button>
-            </div>
+           
           </div>
-          <div>
+          {/* <div>
             <svg
               viewBox="0 0 950.8571428571428 1024"
               className="headernew-icon04"
@@ -91,8 +105,9 @@ const Headernew = (props) => {
             >
               <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
             </svg>
-          </div>
-        </div>
+          </div> */}
+        </div>)}
+        
       </header>
     </div>
   );

@@ -2,11 +2,16 @@ import React from 'react'
 
 import { Player } from '@lottiefiles/react-lottie-player'
 import { Helmet } from 'react-helmet'
-
+import axios from '../Axios/axios'
 import './Styles/home.css'
 import bkimg from './Images/test.jpeg'
 
 const Home = (props) => {
+
+  const  test=async ()=>{
+    const res=await axios.get("/data")
+    console.log(res)
+  }
   return (
     <div className="home-container">
       <Helmet>
@@ -191,9 +196,9 @@ const Home = (props) => {
                 aliquam, sagittis odio metus. Nulla porttitor vivamus viverra
                 laoreet, aliquam netus.
               </span>
-              <button type="button" className="home-button1 button">
+              <button type="button" className="home-button1 button" onClick={test}>
                 <span>
-                  <span>Donate</span>
+                  <span>TEST</span>
                   <br></br>
                 </span>
               </button>
