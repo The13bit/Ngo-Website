@@ -1,23 +1,29 @@
-import React from 'react'
+import React from "react";
 
-import { Player } from '@lottiefiles/react-lottie-player'
-import { Helmet } from 'react-helmet'
-import axios from '../Axios/axios'
-import './Styles/home.css'
-import bkimg from './Images/test.jpeg'
+import { Player } from "@lottiefiles/react-lottie-player";
+import { Helmet } from "react-helmet";
+import axios from "../Axios/axios";
+import "./Styles/home.css";
+import bkimg from "./Images/test.jpeg";
+import giftimg from "./Images/IMG_1698.jpg"
+import outimg from "./Images/IMG_1694.jpg"
 
 const Home = (props) => {
-
-  const  test=async ()=>{
-    const res=await axios.get("/data")
-    console.log(res)
-  }
+  const test = async () => {
+    const res = await axios.get("/data");
+    console.log(res);
+  };
   return (
     <div className="home-container">
       <Helmet>
         <title>NGO</title>
         <meta property="og:title" content="Agitated Brisk Chicken" />
       </Helmet>
+      <div>
+        <h1 className=" tw-font-bold tw-text-xl">
+          Welcome to Geriatic Care and Health Foundation
+        </h1>
+      </div>
       <div className="home-container01">
         <div
           data-thq="slider"
@@ -29,22 +35,23 @@ const Home = (props) => {
             <div
               data-thq="slider-slide"
               className="home-slider-slide swiper-slide"
-              style={{backgroundImage:`url(${bkimg})`}}
-              
+              style={{ backgroundImage: `url(${giftimg})` }}
             >
-              <span>Text</span>
+              {/* <span>Text</span> */}
             </div>
             <div
               data-thq="slider-slide"
               className="home-slider-slide1 swiper-slide"
+              style={{ backgroundImage: `url(${outimg})` }}
             >
-              <span>Lorem</span>
+              {/* <span>Lorem</span> */}
             </div>
             <div
               data-thq="slider-slide"
               className="home-slider-slide2 swiper-slide"
+              style={{ backgroundImage: `url(${bkimg})` }}
             >
-              <span className="home-text02">Text</span>
+              {/* <span className="home-text02">Text</span> */}
             </div>
           </div>
           <div
@@ -74,7 +81,7 @@ const Home = (props) => {
           ></div>
         </div>
       </div>
-      <div className="home-container02">
+      {/* <div className="home-container02">
         <span className="home-text03">
           <span>Projects</span>
           <br></br>
@@ -156,8 +163,8 @@ const Home = (props) => {
             Bibendum vulputate cras aenean.
           </span>
         </div>
-      </div>
-      <div className="home-container09">
+      </div> */}
+      {/* <div className="home-container09">
         <img
           alt="image"
           src="https://play.teleporthq.io/static/svg/default-img.svg"
@@ -205,9 +212,14 @@ const Home = (props) => {
             </div>
           </div>
         </div>
+      </div> */}
+      
+      <div className="tw-text-center">
+        <h1 className=" tw-font-bold tw-text-xl">Our Mission</h1>
+        <p className="tw-text-xl">At Geriatric Care and Health Foundation, we are dedicated to enhancing the quality of life for elderly individuals by providing comprehensive healthcare services, promoting healthy aging, and supporting research in geriatrics.</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -36,16 +36,18 @@
 .home-slider-slide1 {
   display: flex;
   align-items: center;
-  background-size: 100%;
+  background-repeat: no-repeat;
   justify-content: center;
-  background-image: url('https://images.unsplash.com/photo-1697384333613-de519c7367c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTk3NzAzN3w&ixlib=rb-4.0.3&q=80&w=1500');
+  background-position: center;
+  background-size: contain;
 }
 .home-slider-slide2 {
   display: flex;
   align-items: center;
-  background-size: 100%;
+  background-repeat: no-repeat;
   justify-content: center;
-  background-image: url('https://images.unsplash.com/photo-1698180687511-bd6c0104ee98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTk3NzQ5NXw&ixlib=rb-4.0.3&q=80&w=1500');
+  background-position: center;
+  background-size: contain;
 }
 .home-text02 {
   font-size: 50px;

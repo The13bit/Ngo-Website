@@ -17,8 +17,7 @@ const DonateSLD = (props) => {
         "/stripe",
         {
           amount: amount,
-        },
-        { withCredentials: false }
+        }
       );
       
     window.location.href = res.data.url;

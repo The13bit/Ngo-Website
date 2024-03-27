@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 import TeamBanner from "../components/team-banner";
 import "./Styles/about.css";
-
+import inside from "./Images/IMG_1702.jpg";
 const About = (props) => {
   return (
     <div className="about-container">
@@ -12,12 +12,17 @@ const About = (props) => {
         <title>About - NGO</title>
         <meta property="og:title" content="About - Agitated Brisk Chicken" />
       </Helmet>
-      <div className="about-container01">
+      <div
+        className="about-container01"
+        style={{ backgroundImage: `url(${inside})` }}
+      >
         <span className="about-text">
-          <span>BIBEN DUM</span>
+          {/* <span>BIBEN DUM</span>
           <br></br>
-          <span>FRINGI DICTUM, AUGUE PURUS</span>
+          <span>FRINGI DICTUM, AUGUE PURUS</span> */}
         </span>
+      </div>
+      <div className=" tw-bg-slate-100 tw-text-center tw-my-6">
         <span className="about-text04">
           Welcome to Geriatric Care and Health Foundation, a non-profit
           organization dedicated to improving the lives of elderly individuals
@@ -26,8 +31,9 @@ const About = (props) => {
           receive the care, support, and respect they deserve.
         </span>
       </div>
+
       <div className=" tw-m-14 about-container02 ">
-        <h1 className="about-text05">Mission</h1>
+        <h1 className="about-text05 ">Our Mission</h1>
         <span className="about-text06">
           Our mission is to provide comprehensive care and support services to
           elderly individuals, focusing on their physical, mental, and emotional
@@ -42,7 +48,7 @@ const About = (props) => {
           fif fjebfu fmeffe fewfuef mfbewuidfne
         </span>
       </div> */}
-      
+
       {/* <div className="about-container04">
         <h1>Mission</h1>
         <div className="about-container05">

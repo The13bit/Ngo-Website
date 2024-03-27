@@ -16,6 +16,9 @@ import Donation from "./views/donation";
 import NotFound from "./views/not-found";
 import Header from "./components/headernew";
 import Footer from "./components/footer";
+import sucess from "./views/sucess";
+import Canceled from "./views/Canceled";
+//optional
 import Admin from "./views/Admin/Admin";
 import SideBar from "./views/Admin/SideBar";
 const App = () => {
@@ -41,6 +44,8 @@ const App = () => {
           <Route component={Contact} exact path="/Ngo-Website/contact" />
           <Route component={About} exact path="/Ngo-Website/about" />
           <Route component={Donation} exact path="/Ngo-Website/donation" />
+          <Route component={sucess} exact path="/Ngo-Website/Success" />
+          <Route component={Canceled} exact path="/Ngo-Website/Canceled" />
 
           <Route component={NotFound} path="**" />
 

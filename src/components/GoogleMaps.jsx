@@ -9,13 +9,13 @@ export default function Map() {
     iconSize:[24,24],
   })
   return (
-    <MapContainer center={[0,0]} zoom={ 2 } scrollWheelZoom={false}>
+    <MapContainer center={[19.097691, 73.008634]} zoom={ 15} scrollWheelZoom={true}>
 
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
-    <Marker icon={svgIcon} position={[34.0522, -118.2437]}>
+    <Marker icon={svgIcon} position={[19.097691, 73.008634]}>
     <Popup>
     	
     </Popup>

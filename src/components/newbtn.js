@@ -14,7 +14,7 @@ const Newbtn = (props) => {
   
   return (
     <div  className={`newbtn-container ${props.rootClassName} `}>
-      <button onClick={()=>handleRedirect(props.onClick)} type={props.buttonType} className="newbtn-button button">
+      <button onClick={()=>handleRedirect(props.onClick)} type={props.buttonType} className="newbtn-button button hover:-tw-translate-y-2 hover:tw-rounded-lg">
         {props.button1}
       </button>
     </div>

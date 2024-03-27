@@ -12,7 +12,7 @@ const Donation = (props) => {
         <title>Donation - TEST</title>
         <meta property="og:title" content="Donation - TEST" />
       </Helmet>
-      <div className="donation-container1">
+      {/* <div className="donation-container1">
         <div
           data-thq="slider"
           data-autoplay="false"
@@ -66,7 +66,7 @@ const Donation = (props) => {
             className="swiper-button-next"
           ></div>
         </div>
-      </div>
+      </div> */}
       <div className="donation-container2">
         <DonateSLD rootClassName="donate-sld-root-class-name"></DonateSLD>
       </div>
