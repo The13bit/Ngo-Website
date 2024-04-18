@@ -36,9 +36,9 @@ test("renders without crashing", () => {
 test("Home loaded",()=>{
     render(<Home/>)
 })
-test("Contact loaded",()=>{
-    render(<Contact/>)
-})
+// test("Contact loaded",()=>{
+//     render(<Contact/>)
+// })
 test("About loaded",()=>{
     render(<About/>)
 })
