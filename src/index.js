@@ -51,7 +51,7 @@ const App = () => {
           <Route component={Info} exact path="/Ngo-Website/info" />
 
           <Route component={NotFound} path="**" />
-
+{/* test */}
           <Redirect to="**" />
         </Switch>
         <Footer />
