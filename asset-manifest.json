@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ngo-Website/static/css/main.f4931abd.css",
-    "main.js": "/Ngo-Website/static/js/main.bcce977a.js",
+    "main.css": "/Ngo-Website/static/css/main.1693ee02.css",
+    "main.js": "/Ngo-Website/static/js/main.e319fb1f.js",
     "static/media/test.jpeg": "/Ngo-Website/static/media/test.9fba631a4950b32433fd.jpeg",
     "static/media/IMG_1698.jpg": "/Ngo-Website/static/media/IMG_1698.4eed197303cbe2b7d63e.jpg",
     "static/media/IMG_1702.jpg": "/Ngo-Website/static/media/IMG_1702.1d4235448f19de551785.jpg",
@@ -9,11 +9,11 @@
     "static/media/IMG_1694.jpg": "/Ngo-Website/static/media/IMG_1694.78b5ba3e07a72c72de0d.jpg",
     "static/media/GCAHF.png": "/Ngo-Website/static/media/GCAHF.9c575e7cb4ea595188bb.png",
     "index.html": "/Ngo-Website/index.html",
-    "main.f4931abd.css.map": "/Ngo-Website/static/css/main.f4931abd.css.map",
-    "main.bcce977a.js.map": "/Ngo-Website/static/js/main.bcce977a.js.map"
+    "main.1693ee02.css.map": "/Ngo-Website/static/css/main.1693ee02.css.map",
+    "main.e319fb1f.js.map": "/Ngo-Website/static/js/main.e319fb1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4931abd.css",
-    "static/js/main.bcce977a.js"
+    "static/css/main.1693ee02.css",
+    "static/js/main.e319fb1f.js"
   ]
 }
