@@ -1,10 +1,23 @@
 import React from 'react'
 
 import { Helmet } from 'react-helmet'
-
+import { Link } from "react-router-dom";
 import './Styles/contact.css'
 import GMap from '../components/GoogleMaps.jsx'
 import Contactimage from './Images/IMG_1696.jpg'
+const ButtonMailto = ({ mailto, label }) => {
+  return (
+      <Link className="tw-px-4 tw-py-2 tw-bg-green-200 hover:tw-rounded-lg tw-transition-all tw-duration-300 hover:tw-shadow-2xl hover:-tw-translate-y-3 hover:tw-scale-105"
+          to='#'
+          onClick={(e) => {
+              window.location.href = mailto;
+              e.preventDefault();
+          }}
+      >
+          {label}
+      </Link>
+  );
+};
 const Contact = (props) => {
   return (
     <div className="contact-container">
@@ -24,8 +37,12 @@ const Contact = (props) => {
           <div className=" tw-flex tw-flex-col tw-text-center md:tw-text-center lg:tw-text-left ">
             <h1 className=" tw-font-bold ">Contact Us</h1>
             <span className="contact-text01">
-              Erat netus est hendrerit, nullam et quis ad cras porttitor
-              iaculis. Bibendum vulputate cras aenean.
+             +91-986****451
+             
+            </span>
+            <span className="contact-text01">
+             +91-986****451
+             
             </span>
           </div>
           <div className=" tw-flex tw-flex-col tw-text-center  md:tw-text-center lg:tw-text-left">
@@ -34,18 +51,18 @@ const Contact = (props) => {
             Fiza Apartment, B-001, Plot No 195, near MSEB OFFICE, Sector 12B, Bonkode, Kopar Khairane, Navi Mumbai, Maharashtra 400709
             </span>
           </div>
-          <div className=" tw-flex tw-flex-col tw-text-center  md:tw-text-center lg:tw-text-left">
+          {/* <div className=" tw-flex tw-flex-col tw-text-center  md:tw-text-center lg:tw-text-left">
             <h1 className=" tw-font-bold ">Call US</h1>
             <span className="contact-text01">
               Erat netus est hendrerit, nullam et quis ad cras porttitor
               iaculis. Bibendum vulputate cras aenean.
             </span>
-          </div>
+          </div> */}
           <div className=" tw-flex tw-flex-col tw-text-center  md:tw-text-center lg:tw-text-left">
             <h1 className=" tw-font-bold ">Mail</h1>
+            <ButtonMailto  label="Write me an E-Mail" mailto="mailto:no-reply@example.com" />
             <span className="contact-text01">
-              Erat netus est hendrerit, nullam et quis ad cras porttitor
-              iaculis. Bibendum vulputate cras aenean.
+              test@gahcf.com
             </span>
           </div>
           {/* <div className="contact-container05">
