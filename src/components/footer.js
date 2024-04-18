@@ -7,6 +7,7 @@ import './Styles/footer.css'
 const Footer = (props) => {
   return (
     <div className={`footer-container ${props.rootClassName} `}>
+      <p className='tw-text-white'>&copy; Geriatric Care and Health Foundation (GCHF) - {new Date().getFullYear()}</p>
       <div className="footer-container1">
         <a
           href={props.linkText}

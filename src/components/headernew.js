@@ -49,6 +49,7 @@ const Headernew = (props) => {
               rootClassName="newbtn-root-class-name2"
             ></Newbtn>
             <Newbtn
+             onClick="/Ngo-Website/info"
               button1="Info"
               rootClassName="newbtn-root-class-name1"
             ></Newbtn>

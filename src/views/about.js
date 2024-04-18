@@ -76,10 +76,10 @@ const About = (props) => {
           community with compassion, empathy, and expertise.
         </span>
         <div className="about-container11">
-          <TeamBanner rootClassName="team-banner-root-class-name"></TeamBanner>
-          <TeamBanner rootClassName="team-banner-root-class-name1"></TeamBanner>
-          <TeamBanner rootClassName="team-banner-root-class-name2"></TeamBanner>
-          <TeamBanner rootClassName="team-banner-root-class-name3"></TeamBanner>
+          <TeamBanner rootClassName="team-banner-root-class-name" heading="Dr. Pankaj Khangal" text="Doctor"></TeamBanner>
+          {/* <TeamBanner rootClassName="team-banner-root-class-name1"  heading="Shri. Rajesh Sharma" text=""></TeamBanner>
+          <TeamBanner rootClassName="team-banner-root-class-name2"  heading="Smt. Anita Desai " text=""></TeamBanner> */}
+          
         </div>
       </div>
     </div>

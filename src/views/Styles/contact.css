@@ -40,7 +40,7 @@
   height: 468px;
   display: flex;
   align-self: center;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   flex-direction: column;
 }
 .contact-container04 {

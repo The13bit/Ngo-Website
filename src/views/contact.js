@@ -34,7 +34,7 @@ const Contact = (props) => {
           />
         </div>
         <div className="contact-container03">
-          <div className=" tw-flex tw-flex-col tw-text-center md:tw-text-center lg:tw-text-left ">
+          <div className=" tw-flex tw-flex-col lg:tw-text-left ">
             <h1 className=" tw-font-bold ">Contact Us</h1>
             <span className="contact-text01">
              +91-986****451
@@ -45,7 +45,7 @@ const Contact = (props) => {
              
             </span>
           </div>
-          <div className=" tw-flex tw-flex-col tw-text-center  md:tw-text-center lg:tw-text-left">
+          <div className=" tw-flex tw-flex-col    lg:tw-text-left">
             <h1 className=" tw-font-bold ">Address</h1>
             <span className="contact-text01">
             Fiza Apartment, B-001, Plot No 195, near MSEB OFFICE, Sector 12B, Bonkode, Kopar Khairane, Navi Mumbai, Maharashtra 400709
@@ -58,9 +58,9 @@ const Contact = (props) => {
               iaculis. Bibendum vulputate cras aenean.
             </span>
           </div> */}
-          <div className=" tw-flex tw-flex-col tw-text-center  md:tw-text-center lg:tw-text-left">
-            <h1 className=" tw-font-bold ">Mail</h1>
-            <ButtonMailto  label="Write me an E-Mail" mailto="mailto:no-reply@example.com" />
+          <div className=" tw-flex tw-flex-col group    lg:tw-text-left">
+            <h1 className=" tw-font-bold  group-hover:-tw-translate-y-4 tw-transition-all tw-duration-200 ">Mail</h1>
+            <ButtonMailto  label="Write us an E-Mail" mailto="mailto:no-reply@example.com" />
             <span className="contact-text01">
               test@gahcf.com
             </span>

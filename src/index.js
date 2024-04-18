@@ -18,6 +18,7 @@ import Header from "./components/headernew";
 import Footer from "./components/footer";
 import sucess from "./views/sucess";
 import Canceled from "./views/Canceled";
+import Info from "./views/Info"
 //optional
 import Admin from "./views/Admin/Admin";
 import SideBar from "./views/Admin/SideBar";
@@ -46,6 +47,8 @@ const App = () => {
           <Route component={Donation} exact path="/Ngo-Website/donation" />
           <Route component={sucess} exact path="/Ngo-Website/Success" />
           <Route component={Canceled} exact path="/Ngo-Website/Canceled" />
+         
+          <Route component={Info} exact path="/Ngo-Website/info" />
 
           <Route component={NotFound} path="**" />
 
