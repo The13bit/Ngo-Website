@@ -9,8 +9,13 @@ const Donation = (props) => {
   return (
     <div className="donation-container">
       <Helmet>
-        <title>Donation - TEST</title>
-        <meta property="og:title" content="Donation - TEST" />
+        <title>Donation - GCAHF</title>
+        <meta name="description" content="Support the Geriatric Care and Health Foundation. Your donation helps us provide high-quality care for older adults."/>
+  <meta name="keywords" content="Donation, Geriatric Care, Health Foundation, Support"/>
+  <meta property="og:title" content="Donation - Geriatric Care and Health Foundation"/>
+  <meta property="og:description" content="Support the Geriatric Care and Health Foundation. Your donation helps us provide high-quality care for older adults."/>
+  <meta property="og:image" content="URL_TO_IMAGE"/>
+  <meta property="og:url" content="DONATION_PAGE_URL"/>
       </Helmet>
       {/* <div className="donation-container1">
         <div

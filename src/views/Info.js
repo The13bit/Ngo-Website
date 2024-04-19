@@ -1,8 +1,18 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const Info = () => {
   return (
     <>
+    <Helmet>
+      <title>Info-GCAHF</title>
+      <meta name="description" content="Dedicated to improving the health and well-being of older adults through high-quality, compassionate care." />
+      <meta name="keywords" content="Geriatric Care, Health Foundation, Elderly Care, Senior Health" />
+      <meta property="og:title" content="Geriatric Care and Health Foundation" />
+      <meta property="og:description" content="Dedicated to improving the health and well-being of older adults through high-quality, compassionate care." />
+      <meta property="og:url" content="https://geriatrichcf.com/" />
+      <meta name="twitter:card" content="summary_large_image" />
+    </Helmet>
     <div className='tw-flex tw-flex-col'>
   
     <section id="about" className="tw-my-4 tw-mx-2 tw-flex tw-flex-col  ">

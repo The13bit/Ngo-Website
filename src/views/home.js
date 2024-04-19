@@ -5,9 +5,9 @@ import { Helmet } from "react-helmet";
 import axios from "../Axios/axios";
 import "./Styles/home.css";
 import bkimg from "./Images/test.jpeg";
-import giftimg from "./Images/IMG_1698.jpg"
-import outimg from "./Images/IMG_1694.jpg"
-
+import giftimg from "./Images/IMG_1698.jpg";
+import outimg from "./Images/IMG_1694.jpg";
+import NGOICON from "./../components/Images/GCAHF.png";
 const Home = (props) => {
   const test = async () => {
     const res = await axios.get("/data");
@@ -16,8 +16,29 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>NGO</title>
-        <meta property="og:title" content="Agitated Brisk Chicken" />
+        <title>Geriatric Care and Health Foundation</title>
+        <link rel="icon" href={NGOICON} />
+        
+        <meta name="title" content="Geriatric Care and Health Foundation" />
+        <meta
+          name="description"
+          content="Dedicated to improving the health and well-being of older adults through high-quality, compassionate care."
+        />
+        <meta
+          name="keywords"
+          content="Geriatric Care, Health Foundation, Elderly Care, Senior Health"
+        />
+        <meta
+          property="og:title"
+          content="Geriatric Care and Health Foundation"
+        />
+        <meta
+          property="og:description"
+          content="Dedicated to improving the health and well-being of older adults through high-quality, compassionate care."
+        />
+
+        <meta property="og:url" content="https://geriatrichcf.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <div>
         <h1 className=" tw-font-bold tw-text-xl">
@@ -213,10 +234,15 @@ const Home = (props) => {
           </div>
         </div>
       </div> */}
-      
+
       <div className="tw-text-center">
         <h1 className=" tw-font-bold tw-text-xl">Our Mission</h1>
-        <p className="tw-text-xl">At Geriatric Care and Health Foundation, we are dedicated to enhancing the quality of life for elderly individuals by providing comprehensive healthcare services, promoting healthy aging, and supporting research in geriatrics.</p>
+        <p className="tw-text-xl">
+          At Geriatric Care and Health Foundation, we are dedicated to enhancing
+          the quality of life for elderly individuals by providing comprehensive
+          healthcare services, promoting healthy aging, and supporting research
+          in geriatrics.
+        </p>
       </div>
     </div>
   );

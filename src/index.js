@@ -41,14 +41,14 @@ const App = () => {
       <Router>
         <Header />
         <Switch>
-          <Route component={Home} exact path="/Ngo-Website" />
-          <Route component={Contact} exact path="/Ngo-Website/contact" />
-          <Route component={About} exact path="/Ngo-Website/about" />
-          <Route component={Donation} exact path="/Ngo-Website/donation" />
-          <Route component={sucess} exact path="/Ngo-Website/Success" />
-          <Route component={Canceled} exact path="/Ngo-Website/Canceled" />
+          <Route component={Home} exact path="/" />
+          <Route component={Contact} exact path="/contact" />
+          <Route component={About} exact path="/about" />
+          <Route component={Donation} exact path="/donation" />
+          <Route component={sucess} exact path="/Success" />
+          <Route component={Canceled} exact path="/Canceled" />
          
-          <Route component={Info} exact path="/Ngo-Website/info" />
+          <Route component={Info} exact path="/info" />
 
           <Route component={NotFound} path="**" />
 {/* test */}

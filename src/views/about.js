@@ -5,12 +5,14 @@ import { Helmet } from "react-helmet";
 import TeamBanner from "../components/team-banner";
 import "./Styles/about.css";
 import inside from "./Images/IMG_1702.jpg";
+import NGOICON from "./../components/Images/GCAHF.png";
 const About = (props) => {
   return (
     <div className="about-container">
       <Helmet>
-        <title>About - NGO</title>
-        <meta property="og:title" content="About - Agitated Brisk Chicken" />
+        <title>About - GCAHF</title>
+        
+        <link rel="icon" href={NGOICON} />
       </Helmet>
       <div
         className="about-container01"
@@ -77,8 +79,8 @@ const About = (props) => {
         </span>
         <div className="about-container11">
           <TeamBanner rootClassName="team-banner-root-class-name" heading="Dr. Pankaj Khangal" text="Doctor"></TeamBanner>
-          {/* <TeamBanner rootClassName="team-banner-root-class-name1"  heading="Shri. Rajesh Sharma" text=""></TeamBanner>
-          <TeamBanner rootClassName="team-banner-root-class-name2"  heading="Smt. Anita Desai " text=""></TeamBanner> */}
+          <TeamBanner rootClassName="team-banner-root-class-name" heading="Dr. Suyog Moon" text="Doctor"></TeamBanner>
+          
           
         </div>
       </div>

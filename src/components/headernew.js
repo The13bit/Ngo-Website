@@ -18,7 +18,7 @@ const Headernew = (props) => {
   return (
     <div className="headernew-container">
       <header data-thq="thq-navbar" className="headernew-navbar-interactive">
-        <div onClick={() => history.push("/Ngo-Website")}>
+        <div onClick={() => history.push("/")}>
           <img
             src={NGOICON}
             alt="NGO Icon"
@@ -40,16 +40,16 @@ const Headernew = (props) => {
         <div data-thq="thq-navbar-nav" className="headernew-desktop-menu">
           <nav className="headernew-links">
             <Newbtn
-              onClick="/Ngo-Website/about"
+              onClick="/about"
               rootClassName="newbtn-root-class-name"
             ></Newbtn>
             <Newbtn
-              onClick="/Ngo-Website/contact"
+              onClick="/contact"
               button1="Contact"
               rootClassName="newbtn-root-class-name2"
             ></Newbtn>
             <Newbtn
-             onClick="/Ngo-Website/info"
+             onClick="/info"
               button1="Info"
               rootClassName="newbtn-root-class-name1"
             ></Newbtn>
@@ -57,8 +57,8 @@ const Headernew = (props) => {
         </div>
         <div className="headernew-buttons ">
           <button
-            onClick={() => history.push("/Ngo-Website/donation")}
-            className="headernew-register button tw-ml-3"
+            onClick={() => history.push("/donation")}
+            className="tw-bg-[#ea5507] tw-px-4 tw-py-2 tw-rounded-md hover:tw-bg-white hover:-tw-translate-y-2 hover:tw-scale-105 tw-duration-300 tw-transition-all"
           >
             Donate
           </button>
@@ -79,10 +79,10 @@ const Headernew = (props) => {
               </div>
             </div>
             <nav className="headernew-links1">
-              <span onClick={() =>{ history.push("/Ngo-Website"); toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Home</span>
-              <span onClick={() => {history.push("/Ngo-Website/Contact");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Contact</span>
-              <span onClick={() => {history.push("/Ngo-Website/Info");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Info</span>
-              <span onClick={() => {history.push("/Ngo-Website/Donation");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Donation</span>
+              <span onClick={() =>{ history.push("/"); toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Home</span>
+              <span onClick={() => {history.push("/Contact");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Contact</span>
+              <span onClick={() => {history.push("/Info");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Info</span>
+              <span onClick={() => {history.push("/Donation");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Donation</span>
               
             </nav>
            
