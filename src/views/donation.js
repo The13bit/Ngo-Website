@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 
 import DonateSLD from '../components/donate-sld'
 import './Styles/donation.css'
-
+import NGOICON from './../components/Images/GCAHF.png'
 const Donation = (props) => {
   return (
     <div className="donation-container">
@@ -15,7 +15,8 @@ const Donation = (props) => {
   <meta property="og:title" content="Donation - Geriatric Care and Health Foundation"/>
   <meta property="og:description" content="Support the Geriatric Care and Health Foundation. Your donation helps us provide high-quality care for older adults."/>
   <meta property="og:image" content="URL_TO_IMAGE"/>
-  <meta property="og:url" content="DONATION_PAGE_URL"/>
+  <meta property="og:url" content="https://geriatrichcf.com/donation"/>
+  <link rel="icon" href={NGOICON} />
       </Helmet>
       {/* <div className="donation-container1">
         <div

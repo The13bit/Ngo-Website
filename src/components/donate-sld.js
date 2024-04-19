@@ -4,58 +4,82 @@ import PropTypes from "prop-types";
 
 import "./Styles/donate-sld.css";
 import axios from "../Axios/axios";
+import PuffLoader from "react-spinners/PuffLoader";
 
 const DonateSLD = (props) => {
   const [amount, SetAmount] = useState("");
+  const [spinner, SetSpinner] = useState(false);
+  const [errmsg, Seterrmsg] = useState("");
   //const [defValue,SetdefValue]=useState(250)
   const Donate = async () => {
     if (!amount) {
       return;
     }
     try {
+      SetSpinner(!spinner);
       const res = await axios.post(
         "/stripe",
         {
           amount: amount,
+        },
+        {
+          timeout: 10000,
         }
       );
-      
-    window.location.href = res.data.url;
+
+      window.location.href = res.data.url;
     } catch (err) {
-      console.log(err);
+      SetSpinner(false);
+      console.log(spinner);
+      //console.log(err);
+      Seterrmsg("Something went wrong");
     }
-    
   };
   const antUpdate = (e) => {
     SetAmount(Number(e.target.value));
-    
   };
   return (
     <div className={`donate-sld-container ${props.rootClassName} `}>
       <div className="donate-sld-container1">
         <span className="donate-sld-text">{props.text2}</span>
-        <div className="donate-sld-container2">
-          <button type="button" className="donate-sld-button button focus:tw-bg-blue-700 focus:tw-text-white" onClick={(()=>SetAmount(250))}>
+        <div className="donate-sld-container2 tw-flex tw-flex-col tw-gap-2">
+        <div>
+          <button
+            type="button"
+            className="donate-sld-button button focus:tw-bg-blue-700 focus:tw-text-white"
+            onClick={() => SetAmount(250)}
+          >
             {props.button}
           </button>
-          <button type="button" className="donate-sld-button1 button focus:tw-bg-blue-700 focus:tw-text-white" onClick={(()=>SetAmount(500))}>
+          <button
+            type="button"
+            className="donate-sld-button1 button focus:tw-bg-blue-700 focus:tw-text-white"
+            onClick={() => SetAmount(500)}
+          >
             {props.button2}
           </button>
-          <button type="button" className="donate-sld-button2 button focus:tw-bg-blue-700 focus:tw-text-white" onClick={(()=>SetAmount(1000))}>
+          <button
+            type="button"
+            className="donate-sld-button2 button focus:tw-bg-blue-700 focus:tw-text-white"
+            onClick={() => SetAmount(1000)}
+          >
             {props.button3}
           </button>
-        </div>
-        <div className="donate-sld-container3">
+          </div>
           <input
             type="number"
             min="250"
             placeholder="Amount"
             className="input"
             onChange={antUpdate}
-            
-            
           />
-          <span className="">{props.text}</span>
+        </div>
+        
+        <span className="">{props.text}</span>
+        <div>
+          <PuffLoader className="" loading={spinner} />
+        </div>
+        {!spinner && (
           <button
             type="button"
             className="donate-sld-button3 button"
@@ -63,7 +87,9 @@ const DonateSLD = (props) => {
           >
             {props.button1}
           </button>
-          <span className="donate-sld-text2">{props.text1}</span>
+        )}
+        <div className="tw-text-center ">
+          <span className="donate-sld-text2 ">{props.text1}</span>
         </div>
       </div>
     </div>
