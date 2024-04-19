@@ -1,8 +1,8 @@
 {
-  "name": "agitated-brisk-chicken",
+  "name": "Geriatric Care and Health Foundation",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://The13bit.github.io/Ngo-Website",
+  "homepage": "https://geriatrichcf.com/",
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@lottiefiles/react-lottie-player": "3.4.7",
