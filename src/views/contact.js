@@ -59,8 +59,8 @@ const Contact = (props) => {
         <div className="contact-container03">
           <div className=" tw-flex tw-flex-col lg:tw-text-left ">
             <h1 className=" tw-font-bold ">Contact Us</h1>
-            <span className="contact-text01">+91-986****451</span>
-            <span className="contact-text01">+91-986****451</span>
+            <span className="contact-text01">+91-9869166157</span>
+            
           </div>
           <div className=" tw-flex tw-flex-col    lg:tw-text-left">
             <h1 className=" tw-font-bold ">Address</h1>
