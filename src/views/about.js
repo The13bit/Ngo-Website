@@ -78,8 +78,8 @@ const About = (props) => {
           community with compassion, empathy, and expertise.
         </span>
         <div className="about-container11">
-          <TeamBanner rootClassName="team-banner-root-class-name" heading="Dr. Pankaj Khangal" text="Doctor"></TeamBanner>
-          <TeamBanner rootClassName="team-banner-root-class-name" heading="Dr. Suyog Moon" text="Doctor"></TeamBanner>
+          <TeamBanner rootClassName="team-banner-root-class-name" heading="Dr. Pankaj Khangal" text="Doctor" Qualification={"MD ANAESTHESIOLOGY"} showSocial={false}></TeamBanner>
+
           
           
         </div>

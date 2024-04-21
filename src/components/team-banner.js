@@ -15,7 +15,9 @@ const TeamBanner = (props) => {
         />
         <h1 className="team-banner-text">{props.heading}</h1>
         <span className="">{props.text}</span>
-        <div className="team-banner-container2">
+        <span className="">{props.Qualification}</span>
+
+        {props.showSocial&&<div className="team-banner-container2">
           <svg
             viewBox="0 0 877.7142857142857 1024"
             className="team-banner-icon"
@@ -43,7 +45,7 @@ const TeamBanner = (props) => {
               className=""
             ></path>
           </svg>
-        </div>
+        </div>}
       </div>
     </div>
   )
@@ -55,6 +57,8 @@ TeamBanner.defaultProps = {
   imageSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
   imageAlt: 'image',
   rootClassName: '',
+  Qualification:'',
+  showSocial:true
 }
 
 TeamBanner.propTypes = {
@@ -63,6 +67,8 @@ TeamBanner.propTypes = {
   imageSrc: PropTypes.string,
   imageAlt: PropTypes.string,
   rootClassName: PropTypes.string,
+  Qualification:PropTypes.string,
+  showSocial:PropTypes.bool
 }
 
 export default TeamBanner

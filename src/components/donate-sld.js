@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 import PropTypes from "prop-types";
 
@@ -11,6 +11,25 @@ const DonateSLD = (props) => {
   const [spinner, SetSpinner] = useState(false);
   const [errmsg, Seterrmsg] = useState("");
   //const [defValue,SetdefValue]=useState(250)
+
+  const RazorpayButton = () => {
+    useEffect(() => {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.razorpay.com/static/embed_btn/bundle.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }, []);
+  
+    return (
+      <div 
+        className="razorpay-embed-btn" 
+        data-url="https://pages.razorpay.com/pl_O0XaJRlaAzn9vB/view" 
+        data-text="Donate Now" 
+        data-color="#528FF0" 
+        data-size="large"
+      />
+    );
+  };
   const Donate = async () => {
     if (!amount) {
       return;
@@ -42,29 +61,29 @@ const DonateSLD = (props) => {
     <div className={`donate-sld-container ${props.rootClassName} `}>
       <div className="donate-sld-container1">
         <span className="donate-sld-text">{props.text2}</span>
-        <div className="donate-sld-container2 tw-flex tw-flex-col tw-gap-2">
-        <div>
-          <button
-            type="button"
-            className="donate-sld-button button focus:tw-bg-blue-700 focus:tw-text-white"
-            onClick={() => SetAmount(250)}
-          >
-            {props.button}
-          </button>
-          <button
-            type="button"
-            className="donate-sld-button1 button focus:tw-bg-blue-700 focus:tw-text-white"
-            onClick={() => SetAmount(500)}
-          >
-            {props.button2}
-          </button>
-          <button
-            type="button"
-            className="donate-sld-button2 button focus:tw-bg-blue-700 focus:tw-text-white"
-            onClick={() => SetAmount(1000)}
-          >
-            {props.button3}
-          </button>
+        {/* <div className="donate-sld-container2 tw-flex tw-flex-col tw-gap-2">
+          <div>
+            <button
+              type="button"
+              className="donate-sld-button button focus:tw-bg-blue-700 focus:tw-text-white"
+              onClick={() => SetAmount(250)}
+            >
+              {props.button}
+            </button>
+            <button
+              type="button"
+              className="donate-sld-button1 button focus:tw-bg-blue-700 focus:tw-text-white"
+              onClick={() => SetAmount(500)}
+            >
+              {props.button2}
+            </button>
+            <button
+              type="button"
+              className="donate-sld-button2 button focus:tw-bg-blue-700 focus:tw-text-white"
+              onClick={() => SetAmount(1000)}
+            >
+              {props.button3}
+            </button>
           </div>
           <input
             type="number"
@@ -73,10 +92,10 @@ const DonateSLD = (props) => {
             className="input"
             onChange={antUpdate}
           />
-        </div>
-        
+        </div> */}
+
         <span className="">{props.text}</span>
-        <div>
+        {/* <div>
           <PuffLoader className="" loading={spinner} />
         </div>
         {!spinner && (
@@ -87,7 +106,8 @@ const DonateSLD = (props) => {
           >
             {props.button1}
           </button>
-        )}
+        )} */}
+        <RazorpayButton/>
         <div className="tw-text-center ">
           <span className="donate-sld-text2 ">{props.text1}</span>
         </div>
@@ -102,7 +122,7 @@ DonateSLD.defaultProps = {
   rootClassName: "",
   text1:
     "All Donations to HelpAge India are 50% Tax Exempt under section 80G of IT Act, 1961",
-  text: "Minimum Amount should be Rs. 250/-",
+  text: "Minimum Amount should be Rs. 300/-",
   button2: "Rs.500",
   text2: "Donate",
   button: "Rs.250",

@@ -83,6 +83,7 @@ const Headernew = (props) => {
               <span onClick={() => {history.push("/Contact");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Contact</span>
               <span onClick={() => {history.push("/Info");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Info</span>
               <span onClick={() => {history.push("/Donation");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Donation</span>
+              <span onClick={() => {history.push("/about");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">About</span>
               
             </nav>
            

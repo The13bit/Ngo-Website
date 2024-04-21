@@ -23,20 +23,7 @@ import Info from "./views/Info"
 import Admin from "./views/Admin/Admin";
 import SideBar from "./views/Admin/SideBar";
 const App = () => {
-  if (window.location.href.includes("/Doc/Admin")) {
-    
-    return (
-      
-      <Router>
-        <SideBar/>
-        <Switch>
-          <Route component={Admin} exact path="/Doc/Admin/Patients"/>
-        </Switch>
-
-      </Router>
-      
-    )
-  } else {
+  
     return (
       <Router>
         <Header />
@@ -57,7 +44,7 @@ const App = () => {
         <Footer />
       </Router>
     );
-  }
+  
 };
 
 document.addEventListener("DOMContentLoaded", function () {
