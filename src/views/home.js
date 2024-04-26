@@ -18,7 +18,7 @@ const Home = (props) => {
       <Helmet>
         <title>Geriatric Care and Health Foundation</title>
         <link rel="icon" href={NGOICON} />
-        
+
         <meta name="title" content="Geriatric Care and Health Foundation" />
         <meta
           name="description"
@@ -41,7 +41,7 @@ const Home = (props) => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <div>
-        <h1 className=" tw-font-bold tw-text-xl">
+        <h1 className=" tw-font-bold tw-text-xl tw-text-center">
           Welcome to Geriatic Care and Health Foundation
         </h1>
       </div>
@@ -98,21 +98,49 @@ const Home = (props) => {
           ></div>
           <div
             data-thq="slider-button-next"
-            className="swiper-button-next"
+            className="swiper-button-next "
           ></div>
         </div>
       </div>
-      
 
-      <div className="tw-text-center tw-my-4">
-        <h1 className=" tw-font-bold tw-text-xl">Our Mission</h1>
-        <p className="tw-text-xl">
-          At Geriatric Care and Health Foundation, we are dedicated to enhancing
-          the quality of life for elderly individuals by providing comprehensive
-          healthcare services, promoting healthy aging, and supporting research
-          in geriatrics.
-        </p>
+      <div className="tw-flex md:tw-flex-row  tw-flex-col tw-items-center">
+        <div className="tw-h-full tw-text-center tw-my-4 tw-bg-[#82ed9b] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl ">
+          <h1 className=" tw-font-bold tw-text-xl">Our Mission</h1>
+          <p className="tw-text-xl">
+            At Geriatric Care and Health Foundation, we are dedicated to enhancing
+            the quality of life for elderly individuals by providing comprehensive
+            healthcare services, promoting healthy aging, and supporting research
+            in geriatrics.
+          </p>
+        </div>
+        <div className="tw-text-center tw-my-4 tw-bg-[#82ed9b] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl ">
+          <h1 className=" tw-font-bold tw-text-xl">Vision Statement</h1>
+          <p className="tw-text-xl">
+
+            Our vision is to create a society where elderly people are valued, empowered, and integrated. We aim to enhance the well-being of our seniors by addressing their physical, mental, and social needs. We also advocate for their rights and raise awareness about the challenges faced by the elderly population.
+          </p>
+        </div>
+
+
       </div>
+      <div className="tw-flex md:tw-flex-row  tw-flex-col tw-items-center">
+        <div className="tw-text-center tw-my-4 tw-bg-[#ea5507] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl ">
+          <h1 className=" tw-font-bold tw-text-xl tw-text-white">Doctors Available</h1>
+          <p className=" tw-text-9xl tw-font-light tw-font-DM tw-text-white ">
+            12
+          </p>
+        </div>
+        <div className="tw-text-center tw-my-4 tw-bg-[#ea5507] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl  ">
+          <h1 className=" tw-font-bold tw-text-xl tw-text-white">Patients Treated</h1>
+          <p className=" tw-text-white tw-text-9xl">
+
+           90
+          </p>
+        </div>
+
+
+      </div>
+
     </div>
   );
 };

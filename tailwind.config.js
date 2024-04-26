@@ -5,7 +5,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily:{
+      jersy:["Jersey 15"]
+    },
+    extend: {
+      fontFamily: {
+        DM: ["DM Sans", "sans-serif"],
+        jersy: ["Caveat Brush", "Jersey 15"],
+
+      }
+    },
   },
   plugins: [],
 }

@@ -1,7 +1,13 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet'
 import NGOICON from './../components/Images/GCAHF.png'
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 const sucess = () => {
+  const history = useHistory();
+  useEffect(()=>{
+    history.push("/")
+  },[])
   return (
     <>
     <Helmet>

@@ -10,9 +10,7 @@
   background-color: #7d230d;
   
 }
-.newbtn-button:hover {
-  background-color: #d4a107;
-}
+
 .newbtn-button:active {
   background-color: #ffc002;
 }

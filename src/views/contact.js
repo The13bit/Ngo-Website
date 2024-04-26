@@ -62,7 +62,7 @@ const Contact = (props) => {
             <span className="contact-text01">+91-9869166157</span>
             
           </div>
-          <div className=" tw-flex tw-flex-col    lg:tw-text-left">
+          <div className=" tw-flex lg:tw-flex-col     lg:tw-text-left">
             <h1 className=" tw-font-bold ">Address</h1>
             <span className="contact-text01">
               Fiza Apartment, B-001, Plot No 195, near MSEB OFFICE, Sector 12B,

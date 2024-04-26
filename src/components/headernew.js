@@ -58,7 +58,7 @@ const Headernew = (props) => {
         <div className="headernew-buttons ">
           <button
             onClick={() => history.push("/donation")}
-            className="tw-bg-[#ea5507] tw-px-4 tw-py-2 tw-rounded-md hover:tw-bg-white hover:-tw-translate-y-2 hover:tw-scale-105 tw-duration-300 tw-transition-all"
+            className="tw-bg-[#ea5507] hover:tw-drop-shadow-2xl tw-text-white hover:tw-text-[#ea5507] tw-px-4 tw-py-2 tw-rounded-md hover:tw-bg-white hover:-tw-translate-y-2 hover:tw-scale-105 tw-duration-300 tw-transition-all"
           >
             Donate
           </button>

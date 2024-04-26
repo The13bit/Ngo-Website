@@ -25,6 +25,7 @@ import SideBar from "./views/Admin/SideBar";
 const App = () => {
   
     return (
+      
       <Router>
         <Header />
         <Switch>
