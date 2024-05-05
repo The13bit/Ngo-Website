@@ -22,6 +22,8 @@ import Info from "./views/Info"
 //optional
 import Admin from "./views/Admin/Admin";
 import SideBar from "./views/Admin/SideBar";
+import { Redir } from "./views/Redir";
+
 const App = () => {
   
     return (
@@ -29,14 +31,15 @@ const App = () => {
       <Router>
         <Header />
         <Switch>
-          <Route component={Home} exact path="/" />
+          <Route component={Home} exact path="/Home" />
           <Route component={Contact} exact path="/contact" />
           <Route component={About} exact path="/about" />
           <Route component={Donation} exact path="/donation" />
           <Route component={sucess} exact path="/Success" />
           <Route component={Canceled} exact path="/Canceled" />
-         
+          <Route component={Redir} exact path="/"/>
           <Route component={Info} exact path="/info" />
+         
 
           <Route component={NotFound} path="**" />
 {/* test */}

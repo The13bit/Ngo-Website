@@ -39,6 +39,11 @@ const Headernew = (props) => {
 
         <div data-thq="thq-navbar-nav" className="headernew-desktop-menu">
           <nav className="headernew-links">
+          <Newbtn
+              onClick="/Home"
+              button1="Home"
+              rootClassName="newbtn-root-class-name"
+            ></Newbtn>
             <Newbtn
               onClick="/about"
               rootClassName="newbtn-root-class-name"
@@ -68,10 +73,10 @@ const Headernew = (props) => {
             <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
           </svg>
         </div>
-        {Mobile&&(<div    className="headernew-mobile-menu ">
+        {Mobile&&(<div    className=" tw-z-[100] tw-content-between tw-p-8 tw-top-0 tw-left-0 tw-fixed tw-flex tw-flex-col tw-w-full tw-h-full tw-bg-[#fdf0ed] ">
           <div className="headernew-nav">
             <div className="headernew-top">
-              <span className=" tw-text-center tw-max-w-32">Geriatric Care and Health Foundation</span>
+              <span className=" tw-font-bold tw-text-3xl ">Geriatric Care and Health Foundation</span>
               <div data-thq="thq-close-menu" className="headernew-close-menu tw-h-8 tw-w-8" onClick={toggleMobileMenu}>
                 <svg viewBox="0 0 1024 1024" className="tw-h-8 tw-w-8">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -79,7 +84,7 @@ const Headernew = (props) => {
               </div>
             </div>
             <nav className="headernew-links1">
-              <span onClick={() =>{ history.push("/"); toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Home</span>
+              <span onClick={() =>{ history.push("/Home"); toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Home</span>
               <span onClick={() => {history.push("/Contact");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Contact</span>
               <span onClick={() => {history.push("/Info");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Info</span>
               <span onClick={() => {history.push("/Donation");toggleMobileMenu()}} className="headernew-text2 tw-border-solid tw-border- tw-rounded-md tw-px-2 tw-py-1 tw-cursor-pointer hover:tw-bg-[#4CCD99] hover:tw-translate-x-1 hover:tw-scale-110 hover:tw-shadow-md hover:tw-text-white tw-transition-all tw-duration-300">Donation</span>

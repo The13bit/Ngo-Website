@@ -127,14 +127,14 @@ const Home = (props) => {
         <div className="tw-text-center tw-my-4 tw-bg-[#ea5507] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl ">
           <h1 className=" tw-font-bold tw-text-xl tw-text-white">Doctors Available</h1>
           <p className=" tw-text-9xl tw-font-light tw-font-DM tw-text-white ">
-            12
+            8
           </p>
         </div>
         <div className="tw-text-center tw-my-4 tw-bg-[#ea5507] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl  ">
           <h1 className=" tw-font-bold tw-text-xl tw-text-white">Patients Treated</h1>
           <p className=" tw-text-white tw-text-9xl">
 
-           90
+           35
           </p>
         </div>
 

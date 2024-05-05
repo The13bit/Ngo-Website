@@ -47,8 +47,8 @@
   border-width: 1px;
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
-}
-.input {
+} 
+/* .input {
   color: var(--dl-color-gray-black);
   cursor: auto;
   padding: 0.5rem 1rem;
@@ -65,7 +65,7 @@
   border-width: 1px;
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
-}
+} */
 .list {
   width: 100%;
   margin: 1em 0px 1em 0px;
