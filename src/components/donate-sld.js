@@ -120,8 +120,7 @@ DonateSLD.defaultProps = {
   button1: "Next",
   button3: "Rs.1000",
   rootClassName: "",
-  text1:
-    "All Donations to HelpAge India are 50% Tax Exempt under section 80G of IT Act, 1961",
+  text1:"",
   text: "Minimum Amount should be Rs. 300/-",
   button2: "Rs.500",
   text2: "Donate",
