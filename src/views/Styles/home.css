@@ -1,4 +1,7 @@
 
+body {
+  background-color:azure;
+}
 .home-container {
   gap: var(--dl-space-space-twounits);
   width: 100%;
@@ -17,11 +20,73 @@
   display: flex;
   align-items: flex-start;
 }
+
+.mky{
+  height: "502px";
+  padding-left: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+ padding-left: 80px;
+ text-align: center;
+ max-width: 100%; 
+}
+.mky img {
+  height: "502px";
+  width: "unset";
+  width: "unset";
+  margin-bottom: 16px;
+  margin-top: -30px;
+  max-width: 100%; 
+  /* Adjust this value to your desired height */
+  /* You can also set a specific height in pixels if you prefer */
+}
+.mky p {
+  display: inline-block;
+  text-align: center; /* Reset text-align for the paragraph */
+}
+.mky .bold-text {
+  font-weight: bold;
+  margin-top: 20px; /* Adjust spacing as needed */
+}
+
+/*@media (max-width: 767px) {
+  .mky {
+    padding: 0 10px; /* Adjust padding for smaller screens }*/
+  
+  /*.home-slider {
+  
+    padding: 0 10px; /* Adjust padding for smaller screens   }
+  } */
+  @media (max-width: 767px) {
+    .home-container01 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mky {
+      padding: 0 20px; /* Adjust padding for smaller screens */
+      text-align: center;
+      margin: 20px; /* Adjust margin for smaller screens */
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .mky {
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+
+.img{
+ 
+}
 .home-slider {
   width: 100%;
   height: 100%;
   display: inline-block;
-}
+  }
 .home-slider-slide {
   display: flex;
   align-items: center;
