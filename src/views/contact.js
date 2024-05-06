@@ -56,11 +56,11 @@ const Contact = (props) => {
             content="Contact - Agitated Brisk Chicken"
           />
         </Helmet>
-        <div className="contact-container01">
+        <div className="contact-container01 ">
           <div className="contact-container02">
             <img alt="image" src={Contactimage} className="contact-image" />
           </div>
-          <div className="contact-container03">
+          <div className="contact-container03 tw-shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] tw-p-4 tw-mx-4">
             <div className=" tw-flex tw-flex-col lg:tw-text-left ">
               <h1 className=" tw-font-bold ">Contact Us</h1>
               <span className="contact-text01">+91-9869166157</span>
@@ -91,33 +91,7 @@ const Contact = (props) => {
                 vijaykumarsgaikwad@gmail.com
               </span>
             </div>
-            {/* <div className="contact-container05">
-            <h1 className="contact-text02">Address</h1>
-            <span className="contact-text03">
-              Erat netus est hendrerit, nullam et quis ad cras porttitor
-              iaculis. Bibendum vulputate cras aenean.
-            </span>
-          </div>
-          <div className="contact-container06">
-            <h1 className="contact-text04">
-              <span>Mail</span>
-              <br></br>
-            </h1>
-            <span className="contact-text07">
-              Erat netus est hendrerit, nullam et quis ad cras porttitor
-              iaculis. Bibendum vulputate cras aenean.
-            </span>
-          </div>
-          <div className="contact-container07">
-            <h1 className="contact-text08">
-              <span>Call us</span>
-              <br></br>
-            </h1>
-            <span className="contact-text11">
-              Erat netus est hendrerit, nullam et quis ad cras porttitor
-              iaculis. Bibendum vulputate cras aenean.
-            </span>
-          </div> */}
+          
           </div>
         </div>
         <div className="contact-container08 ">
@@ -146,9 +120,9 @@ const Contact = (props) => {
                   />
                 </div>
                 <div className="tw-w-full tw-mx-3 tw-my-2">
-                  <label className="">Name</label>
+                  <label className="">Phone Number</label>
                   <input
-                    type="text"
+                    type="number"
                     className=" input tw-w-full tw-peer tw-border-b-2 tw-border-0 tw-appearance-none tw-border-gray-300 focus:tw-outline-none focus:tw-border-blue-400"
                   />
                 </div>
