@@ -15,6 +15,9 @@ module.exports = {
 
       }
     },
+    screens:{
+      'ngl':'958px'
+    }
   },
   plugins: [],
 }

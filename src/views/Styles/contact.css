@@ -2,7 +2,7 @@
   gap: var(--dl-space-space-twounits);
   width: 100%;
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
@@ -37,7 +37,7 @@
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 50%;
-  height: 468px;
+  /* height: 468px; */
   display: flex;
   align-self: center;
   /* align-items: flex-start; */
@@ -123,8 +123,8 @@
   align-self: flex-start;
   margin-top: 0px;
   align-items: center;
-  margin-left: var(--dl-space-space-twounits);
-  margin-right: var(--dl-space-space-twounits);
+  /* margin-left: var(--dl-space-space-twounits);
+  margin-right: var(--dl-space-space-twounits); */
   margin-bottom: 0px;
   justify-content: center;
 }
@@ -133,7 +133,7 @@
   width: 50%;
   
   height: 100%;
-  display: flex;
+  /* display: flex; */
   align-items: flex-start;
   flex-direction: column;
 }
@@ -247,9 +247,9 @@
     flex-direction: column;
     padding-bottom: 0px;
   }
-  .contact-container09 {
+  /* .contact-container09 {
     display: none;
-  }
+  } */
   .contact-form {
     width: 402px;
     height: 527px;

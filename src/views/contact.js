@@ -9,7 +9,7 @@ import NGOICON from "./../components/Images/GCAHF.png";
 const ButtonMailto = ({ mailto, label }) => {
   return (
     <Link
-      className="tw-px-4 tw-py-2 lg:tw-self-start  tw-self-center tw-bg-green-200 hover:tw-rounded-lg tw-transition-all tw-duration-300 hover:tw-shadow-2xl hover:-tw-translate-y-3 hover:tw-scale-105"
+      className="tw-px-4 tw-py-2 lg:tw-self-start  tw-self-center tw-bg-green-200 hover:tw-rounded-lg tw-transition-all tw-duration-300 hover:tw-shadow-2xl tw-break-all hover:-tw-translate-y-3 hover:tw-scale-105"
       to="#"
       onClick={(e) => {
         window.location.href = mailto;
@@ -87,18 +87,20 @@ const Contact = (props) => {
                 label="Write us an E-Mail"
                 mailto="mailto:vijaykumarsgaikwad@gmail.com"
               />
-              <span className="contact-text01">
+              <span className="contact-text01 tw-break-all">
                 vijaykumarsgaikwad@gmail.com
               </span>
             </div>
           
           </div>
         </div>
+
+
         <div className="contact-container08 ">
-          <div className="contact-container09">
+          <div className="contact-container09 hidden ngl:tw-flex">
             <GMap />
           </div>
-          <div className="tw-flex tw-flex-col tw-justify-center tw-w-1/2 tw-mx-4 tw-shadow-lg tw-mx-12">
+          <div className="tw-flex tw-flex-col tw-justify-center tw-w-4/5 tw-mx-4 tw-shadow-lg ">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -107,7 +109,7 @@ const Contact = (props) => {
               className="tw-flex tw-flex-col tw-items-center tw-mx-4"
             >
               <span className="contact-text12 lg:tw-self-center">
-                Have a Query
+                Have a Enquiry? Write to us
               </span>
               <span className="contact-text13"></span>
               

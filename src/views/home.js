@@ -7,6 +7,7 @@ import "./Styles/home.css";
 import bkimg from "./Images/test.jpeg";
 import giftimg from "./Images/IMG_1698.jpg";
 import outimg from "./Images/IMG_1694.jpg";
+import gift2 from "./Images/gift2.jpeg"
 import NGOICON from "./../components/Images/GCAHF.png";
 const Home = (props) => {
   const test = async () => {
@@ -66,6 +67,13 @@ const Home = (props) => {
               style={{ backgroundImage: `url(${outimg})` }}
             >
               {/* <span>Lorem</span> */}
+            </div>
+            <div
+              data-thq="slider-slide"
+              className="home-slider-slide2 swiper-slide"
+              style={{ backgroundImage: `url(${gift2})` }}
+            >
+              {/* <span className="home-text02">Text</span> */}
             </div>
             <div
               data-thq="slider-slide"
