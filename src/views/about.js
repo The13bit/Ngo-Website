@@ -24,8 +24,8 @@ const About = (props) => {
           <span>FRINGI DICTUM, AUGUE PURUS</span> */}
         </span>
       </div>
-      <div className=" tw-bg-slate-100 tw-text-center tw-my-6">
-        <span className="about-text04">
+      <div className="  tw-text-center tw-my-6 tw-bg-[#82ed9b]">
+        <span className="about-text04 tw-font-medium">
           Welcome to Geriatric Care and Health Foundation, a non-profit
           organization dedicated to improving the lives of elderly individuals
           and promoting their health and well-being. Our foundation was
@@ -36,7 +36,7 @@ const About = (props) => {
 
       <div className=" tw-m-14 about-container02 ">
         <h1 className="about-text05 ">Our Mission</h1>
-        <span className="about-text06">
+        <span className="about-text06 tw-font-medium tw-px-2 tw-py-4">
           Our mission is to provide comprehensive care and support services to
           elderly individuals, focusing on their physical, mental, and emotional
           well-being. We aim to enhance their quality of life and empower them

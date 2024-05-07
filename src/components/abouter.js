@@ -4,7 +4,7 @@ const Abouter = ({ header, content, Icons }) => {
   return (
     <>
       <div className="tw-m-4">
-        <div className=" tw-flex tw-bg-[#bbe599] tw-p-4 tw-text-[#ea5507] tw-font-bold tw-items-center tw-justify-center lg:tw-justify-left">
+        <div className=" tw-flex tw-bg-[#82ed9b] tw-p-4 tw-text-[#ea5507] tw-font-bold tw-items-center tw-justify-center lg:tw-justify-left">
           <div className="tw-mx-4">{Icons}</div>
           <p className="tw-text-xl">{header}</p>
         </div>

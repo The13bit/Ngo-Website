@@ -111,10 +111,10 @@ const Home = (props) => {
         </div>
       </div>
 
-      <div className="tw-flex md:tw-flex-row  tw-flex-col tw-items-center">
+      <div className="tw-flex md:tw-flex-row  tw-flex-col ">
         <div className="tw-h-full tw-text-center tw-my-4 tw-bg-[#82ed9b] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl ">
           <h1 className=" tw-font-bold tw-text-xl">Our Mission</h1>
-          <p className="tw-text-xl">
+          <p className="tw-text-xl tw-font-medium">
             At Geriatric Care and Health Foundation, we are dedicated to enhancing
             the quality of life for elderly individuals by providing comprehensive
             healthcare services, promoting healthy aging, and supporting research
@@ -123,7 +123,7 @@ const Home = (props) => {
         </div>
         <div className="tw-text-center tw-my-4 tw-bg-[#82ed9b] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl ">
           <h1 className=" tw-font-bold tw-text-xl">Vision Statement</h1>
-          <p className="tw-text-xl">
+          <p className="tw-text-xl tw-font-medium">
 
             Our vision is to create a society where elderly people are valued, empowered, and integrated. We aim to enhance the well-being of our seniors by addressing their physical, mental, and social needs. We also advocate for their rights and raise awareness about the challenges faced by the elderly population.
           </p>
@@ -133,13 +133,13 @@ const Home = (props) => {
       </div>
       <div className="tw-flex md:tw-flex-row  tw-flex-col tw-items-center">
         <div className="tw-text-center tw-my-4 tw-bg-[#ea5507] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl ">
-          <h1 className=" tw-font-bold tw-text-xl tw-text-white">Doctors Available</h1>
+          <h1 className=" tw-font-bold tw-text-xl tw-text-white">NGO members</h1>
           <p className=" tw-text-9xl tw-font-light tw-font-DM tw-text-white ">
             8
           </p>
         </div>
         <div className="tw-text-center tw-my-4 tw-bg-[#ea5507] tw-mx-3 tw-rounded-lg tw-px-3 tw-py-3 tw-shadow-xl  ">
-          <h1 className=" tw-font-bold tw-text-xl tw-text-white">Patients Treated</h1>
+          <h1 className=" tw-font-bold tw-text-xl tw-text-white">Elderly Beneficiaries</h1>
           <p className=" tw-text-white tw-text-9xl">
 
            35
