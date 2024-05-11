@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Player } from "@lottiefiles/react-lottie-player";
 import { Helmet } from "react-helmet";
 import axios from "../Axios/axios";
@@ -9,6 +8,9 @@ import giftimg from "./Images/IMG_1698.jpg";
 import outimg from "./Images/IMG_1694.jpg";
 import gift2 from "./Images/gift2.jpeg"
 import NGOICON from "./../components/Images/GCAHF.png";
+import Coverpic from "./Images/front (1).png";
+
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 const Home = (props) => {
   const test = async () => {
     const res = await axios.get("/data");
@@ -19,7 +21,6 @@ const Home = (props) => {
       <Helmet>
         <title>Geriatric Care and Health Foundation</title>
         <link rel="icon" href={NGOICON} />
-
         <meta name="title" content="Geriatric Care and Health Foundation" />
         <meta
           name="description"
@@ -29,24 +30,36 @@ const Home = (props) => {
           name="keywords"
           content="Geriatric Care, Health Foundation, Elderly Care, Senior Health"
         />
-        <meta
-          property="og:title"
-          content="Geriatric Care and Health Foundation"
-        />
+        <meta property="og:title" content="Geriatric Care and Health Foundation" />
         <meta
           property="og:description"
           content="Dedicated to improving the health and well-being of older adults through high-quality, compassionate care."
         />
-
         <meta property="og:url" content="https://geriatrichcf.com/" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
+
       <div>
-        <h1 className=" tw-font-bold tw-text-xl tw-text-center">
-          Welcome to Geriatic Care and Health Foundation
+        <h1 className="tw-font-bold tw-text-3xl tw-text-center">
+          Welcome to Geriatric Care and Health Foundation
         </h1>
       </div>
+
+      <div className="tw-flex md:tw-flex-col tw-items-center"></div>
+
       <div className="home-container01">
+        <div className="mky">
+          <img
+            src={Coverpic}
+            alt="NGOICON"
+            className="tw-w-full tw-h-auto tw-mx-auto tw-my-4 tw-shadow-xl"
+          />
+          
+          <p>Give Your Loved Ones Care they need and Love through</p>
+          <p className="bold-text">
+            <strong>OUR OLD AGE HOME</strong>
+          </p>
+      </div>
         <div
           data-thq="slider"
           data-navigation="true"
@@ -68,7 +81,7 @@ const Home = (props) => {
             >
               {/* <span>Lorem</span> */}
             </div>
-            <div
+<div
               data-thq="slider-slide"
               className="home-slider-slide2 swiper-slide"
               style={{ backgroundImage: `url(${gift2})` }}
