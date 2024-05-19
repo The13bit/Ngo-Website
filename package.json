@@ -25,8 +25,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run addDomain && gh-pages -d build",
     "start": "craco start",
+    "addDomain":"echo geriatrichcf.com > build/CNAME",
     "build": "craco build && cp build/index.html build/404.html",
     "test": "craco test --env=jsdom --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "craco eject"
