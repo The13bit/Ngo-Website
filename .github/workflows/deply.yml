@@ -1,11 +1,13 @@
 name: CI/CD
 
 on:
-  workflow_run:
-
-    workflows: ["CodeQL"]
-    types:
-      - completed
+   push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '21 1 * * 4'
+  workflow_dispatch:
 
 jobs:
   build:
