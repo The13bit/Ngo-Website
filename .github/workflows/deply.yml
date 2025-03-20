@@ -3,11 +3,11 @@ name: CI/CD
 on:
    push:
     branches: [ "main" ]
-  pull_request:
+   pull_request:
     branches: [ "main" ]
-  schedule:
+   schedule:
     - cron: '21 1 * * 4'
-  workflow_dispatch:
+   workflow_dispatch:
       inputs:
       logLevel:
         description: 'Log level'
